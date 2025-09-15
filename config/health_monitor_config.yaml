@@ -1,0 +1,20 @@
+# Health Monitor Configuration Parameters
+
+health_analyzer:
+  ros__parameters:
+    # Motor RPM thresholds
+    motor_rpm_min: -2000
+    motor_rpm_max: 2000
+    
+    # Battery thresholds
+    battery_healthy_threshold: 25.0
+    battery_warning_threshold: 15.0
+    
+    # Motor timeout
+    motor_timeout_seconds: 5.0
+    
+    # Publishing frequency 
+    publish_frequency: 5.0
+    
+    # History size
+    history_size: 10
