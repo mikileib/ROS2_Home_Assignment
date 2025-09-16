@@ -35,8 +35,18 @@ health_monitor/
 
 ### Prerequisites
 - ROS2 Humble or later
-- `interfaces` package with `RobotStatus` message
+- `interfaces` package with `RobotStatus` message (see message definition below)
 - Docker (for macOS users)
+
+### Required Message Definition
+
+Create `interfaces/msg/RobotStatus.msg` with:
+```
+float32 battery_charge    # Battery charge percentage (0-100)
+int32 motor1_rpm         # Motor 1 RPM
+int32 motor2_rpm         # Motor 2 RPM  
+int32 bit_errors         # Built-in test errors count
+```
 
 ### Build
 ```bash
